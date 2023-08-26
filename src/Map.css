@@ -1,0 +1,5 @@
+.MapContainer {
+  width: 40%;
+  height: 400px; /* Set the desired height for the map */
+  margin: 0 auto;
+}

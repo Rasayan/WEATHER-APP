@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+} 
+
+body {
+    background-color: #0c141c;
+    padding: 2em 2em;
+    overflow: hidden;
+}
+
+header {
+    border: none;
+    padding: 0.1em 0;
+    background-color: #202b3b;
+    width: 6%;
+    height: 92vh;
+}
+
+#icon {
+    color: aliceblue;
+    margin: 3px 0;
+}
+
+#icon:hover {
+    font-size: 1.9em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.mainIcon {
+    background-image: linear-gradient(to right, #7a8389, #6f787d, #646c70, #596164)!important;
+}
+
+.iconMain {
+    margin: 3px 0;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#FFC3A0, #ffafbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    background-color: #202b3b;
+    padding: 0 1em;
+}
+
+#icon-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon-text {
+    color: aliceblue;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+
+#weather-input {
+    width: 90%;
+    height: 84vh;
+}
+
+#root {
+    position: absolute;
+    top: 1em;
+    left: 9em;
+    width: 87%;
+    height: 94vh;
+}
+
+#map {
+    display: none;
+    /* position: absolute;
+    top: 1em;
+    left: 9em;
+    width: 87%;
+    height: 94vh; */
+}
+@media (max-width: 768px) {
+#icon {
+    font-size: 20px;
+}
+}
+  
+@media (min-width: 769px) and (max-width: 1200px) {
+#icon {
+      font-size: 30px;
+}
+}
+  
+@media (max-width: 1201px) {
+    #toggle-button {
+        margin: 0 1em;
+    }
+    #icon {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        width: 5%;
+        height: 94vh;
+    }
+}
+
+@media (max-width: 400px) {
+    html, body {
+        width: 90%;
+        overflow-x: hidden;
+        margin: 0!important;
+    }
+    body {
+        padding: 4.5em 0.5em;
+        overflow-x: hidden;
+        height: 130%;
+        overflow-x: hidden;
+    }
+
+    #root {
+        position: absolute;
+        top: 1em;
+        left: 0;
+        width: 87%;
+        height: 94vh;
+    }
+    
+    header {
+        border: none;
+        padding: 0.01em 0;
+        background-color: #202b3b;
+        width: 13%;
+        height: 42vh;
+    }
+
+    .mainIcon {
+        background-image: none!important;
+    }
+
+    #icon-text {
+        display: none;
+    }
+}
+  
